@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> -->
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" href="style.css">
+<script>
+    function book()
+    {
+        var val=1345;
+        localStorage.setItem("textvalue",val);
+        return false;
+    }
+    function book2()
+    {
+        var val=859;
+        localStorage.setItem("textvalue",val);
+        return false;
+    }
+    function book3()
+    {
+        var val=1859;
+        localStorage.setItem("textvalue",val);
+        return false;
+    }
+    function book4()
+    {
+        var val=2500;
+        localStorage.setItem("textvalue",val);
+        return false;
+    }
+    function book5()
+    {
+        var val=1110;
+        localStorage.setItem("textvalue",val);
+        return false;
+    }
+    function book6()
+    {
+        var val=1559;
+        localStorage.setItem("textvalue",val);
+        return false;
+    }
+</script>
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="image/bycicle (1).png" width="60px" alt=""></a>
+        <!-- <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul> -->
+        <ul>
+            <li><a href="index.html" class="A">HOME</a></li>
+            <li><a href="about.html" class="A">ABOUT</a></li>
+            <li><a href="BikeListing.html" class="A">BIKE LISTING</a></li>
+            <!-- <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Team</a></li> -->
+            <li><a href="contact-us.html" class="A">CONTACT</a></li>
+            <li><a href="Profile.jsp" class="B"><img src="images/user.png" alt="" width="30px"></a></li>
+            <li><button class="btn"><a href="Logout.jsp" class="A">LOGOUT</a></button></li>
+        </ul>
+    </header>
+    <!-- <section class="banner"></section> -->
+    <script type="text/javascript">
+    window.addEventListener("scroll",function()
+    {
+        var header=document.querySelector("header");
+        header.classList.toggle("sticky",window.scrollY>0);
+    })
+    </script>
+    <div class="bg">
+    </div>
+    <div class="bdy">
+        <center>
+        <h2> Find the <span> Best Bike For You</span></h2>
+            <p class="pp"> You will be able to fully enjoy your holiday and your ride! Any problems? Our passionate team will be happy to help you!! No waste of time during your holidays to find a rental point on the spot! No language barrier, thanks to our multilingual team! At the same price you would pay on the spot! We have best bikes with best deals</p>
+        
+            <br><br>
+        <h1 class="bike">New Bike</h1>
+        <hr style="height:5px; width:15%;border-width:0;color:gray;background-color:red">
+        </center>
+    
+    <!-- <div class="row">
+        <div class="col-4">
+            <img src="image/bike1.png" alt="">
+        </div>
+        <div class="col-4">
+            <img src="image/bike2.png" alt="">
+        </div>
+        <div class="col-4">
+            <img src="image/bike3.jpg" alt="">
+        </div>
+    </div> -->
+
+
+        <div class="row Products">
+            <div class="col-4">
+                <a href="Fp-1 Product-detail.html"><img id="im" src="image/yamaha-fz25-3-removebg-preview (1).png" alt=""></a>
+                <a href="Fp-1 Product-detail.html">
+                    <h4>Yamaha FZ25</h4>
+                </a>
+
+                <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                </div>
+                <table class="bike">
+                    <tr>
+                        <td><p id="pp" class="1345">₹1345 /Day</p></td>
+                        <!-- <td><a href="search_car.html"><button class="btn2">BOOK NOW</button></a></td> -->
+                        <td><a href="search_car.html"><button type="button" class="btn btn-primary btn-lg" onclick="book()">Book Now</button></a></td>
+                    </tr>
+                </table>
+                
+            </div>
+
+            <div class="col-4">
+                <a href="Fp-2 Product-detail.html"><img src="image/ninja400-removebg-preview.png" alt=""></a>
+                <a href="Fp-2 Product-detail.html">
+                    <h4>ninja 400</h4>
+                </a>
+                <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="far fa-star"></i>
+                </div>
+                <table class="bike">
+                    <tr>
+                        <td><p id="pp">₹859 /Day</p></td>
+                        <td><a href="search_car.html"><button type="button" class="btn btn-primary btn-lg" onclick="book2()">Book Now</button></a></td>
+                    </tr>
+                </table>
+                <!-- <p class="price">$859 /Day</p>
+                <p>The Pulsar is by far the most successful brand Bajaj has managed to cr</p> -->
+            </div>
+
+            <div class="col-4">
+                <a href="product-detail.html"><img src="image/bmw-removebg-preview.png" alt=""></a>
+                <a href="product-detail.html">
+                    <h4>BMW R 1250 GS</h4>
+                </a>
+                <!-- <h4>Red Printed T-shirts</h4> -->
+                <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <table class="bike">
+                    <tr>
+                        <td><p id="pp">₹1859 /Day</p></td>
+                        <td><a href="search_car.html"><button type="button" class="btn btn-primary btn-lg" onclick="book3()">Book Now</button></td></a>
+                    </tr>
+                </table>
+                <!-- <p class="price">$50.00</p> -->
+            </div>
+
+           
+        </div>
+
+        <div class="row Products">
+            <div class="col-4">
+                <a href="Fp-4 Product-detail.html"><img src="image/hayabusa2.png" alt=""></a>
+                <a href="Fp-4 Product-detail.html">
+                    <h4>Suzuki Hayabusa</h4>
+                </a>
+                <!-- <img src="image2/hrx shoe 1.jpg" alt="">
+                <h4>Blue T-shirts</h4> -->
+                <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <table class="bike">
+                    <tr>
+                        <td><p id="haya">₹2500 /Day</p></td>
+                        <td><a href="search_car.html"><button type="button" class="btn btn-primary btn-lg" onclick="book4()">Book Now</button></a></td>
+                    </tr>
+                </table>
+                <!-- <p class="price">$200.00</p> -->
+            </div>
+
+
+            <div class="col-4">
+                <a href="Fp-5 Product-detail.html"><img id="ktm" src="image/ktm-removebg-390.png" alt=""></a>
+                <a href="Fp-5 Product-detail.html">
+                    <h4>KTM RC 390</h4>
+                </a>
+                <!-- <h4>Red Printed T-shirts</h4> -->
+                <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <table class="bike">
+                    <tr>
+                        <td><p id="pp">₹1110 /Day</p></td>
+                        <td><a href="search_car.html"><button type="button" class="btn btn-primary btn-lg" onclick="book5()">Book Now</button></a></td>
+                    </tr>
+                </table>
+                <!-- <p class="price">$50.00</p> -->
+            </div>
+
+            <div class="col-4">
+                <a href="product-detail.html"><img src="image/uuu.png" alt=""></a>
+                <a href="product-detail.html">
+                    <h4>HARLEY-DAVIDSON</h4>
+                </a>
+                <!-- <h4>Red Printed T-shirts</h4> -->
+                <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <table id="bike">
+                    <tr>
+                        <td><p id="pp2">₹1559 /Day</p></td>
+                        <td><a href="search_car.html"><button type="button" class="btn btn-primary btn-lg" onclick="book6()">Book Now</button></a></td>
+                    </tr>
+                </table>
+                <!-- <p class="price">$50.00</p> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay">
+
+    <section id="banner" class="banner-style">
+
+        <div class="container2 ">
+            <h4 style="color:white;">OFFER OF THE DAY</h4>
+            <h1 style="color:white;" class="banner-font">DUCATI <br>
+                <i class="fas fa-rupee-sign fa-sm"></i> 7696/- MRP <del>10995</del> (30% Off)
+            </h1>
+            <!-- <div class="button_cont" align="center"><a class="example_banner" href="Category 1.html" target="_blank"
+                rel="nofollow noopener">Shop Now</a></div> -->
+            <!-- <div class="button_cont2" align="center"><a class="example_a" href="Banner Product-detail.html"
+                    target="_blank" rel="nofollow noopener">Shop Now</a></div> -->
+
+                <button type="button" class="btn btn-dark btn-lg">Book Now</button>
+        </div>
+
+    </section>
+</div>
+
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Excellent service. Car was very clean and in good condition. 
+                        Managed to get me a rental car in very short amount of time. Would definitely recommend.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <img src="image/user-1.jpg" alt="">
+                    <h3>Elisa Cinelli</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Had a very nice and safe journey without any trouble with the vehicle in between.
+                        I recommend this travels.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <img src="image/user-2.jpg" alt="">
+                    <h3>John Smith</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Very good service. Neat & new car. 
+                        Very efficient drop off & pick up as well. Overall very happy with the arrangement.
+                    </p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <img src="image/user-3.png" alt="">
+                    <h3>L. Elizabeth Forry</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="cta">
+
+        <h3 class="cta-text">FIND YOUR PERFECT BIKE TODAY.</h3>
+        <p id="bikewala">We have more than a thousand bikes for you to choose.</p>
+        <!-- <button type="button">Download</button>
+        <button type="button">Download</button> -->
+        <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download
+        </button>
+        <button type="button" class="btn btn-light btn-lg download-button"><i class="fab fa-google-play"></i> Download
+        </button>
+    
+      </section>
+
+      <footer id="footer">
+        <a class="footer-link" href="https://www.facebook.com/profile.php?id=100009886246542" target="_blank"><i
+            class="fab  fa-facebook-square"></i></a>
+        <a class="footer-link" href="https://www.linkedin.com/in/shyamal-das-534a461ab/" target="_blank"><i
+            class="fab  fa-linkedin"></i></a>
+        <a class="footer-link" href="https://twitter.com/Shyamal64118629?s=08" target="_blank"><i
+            class="fab  fa-twitter-square"></i></a>
+        <a class="footer-link" href="https://www.instagram.com/ig_shyamal_/" target="_blank"><i
+            class="fab  fa-instagram"></i>
+        </a>
+        <a class="footer-link" href="mailto:amitdas1228@gmail.com"><i class="fas fa-envelope"></i></a>
+        <p>© Copyright 2022 Bikewala</p>
+    
+      </footer>
+
+    <!-- <h1 style="color: red" >Hello</h1> -->
+</body>
+</html>

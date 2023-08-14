@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - AVON | Ecommerce Site</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="navbar">
+           
+            <div class="logo">
+                <a href="index.html"><img src="image2/avon.png" alt="Avon_logo" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menu-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="image2/cart.png" alt="" width="30px" height="30px"></a>
+            <img src="image2/menu.png" class="menu-icon" alt="" onclick="menutoggle()">
+        </div>
+
+    </div> -->
+
+    <header>
+        <a href="#" class="logo"><img src="image/bycicle (1).png" width="60px" alt=""></a>
+        <ul>
+            <li><a href="index.html" class="A">HOME</a></li>
+            <li><a href="about.html" class="A">ABOUT</a></li>
+            <li><a href="BikeListing.html" class="A">BIKE LISTING</a></li>
+            <!-- <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Team</a></li> -->
+            <li><a href="contact-us.html" class="A">CONTACT</a></li>
+            <li><a href="Profile.jsp" class="B"><img src="images/user.png" alt="" width="30px"></a></li>
+            <li><button class="btn"><a href="Logout.jsp" class="A">LOGOUT</a></button></li>
+        </ul>
+    </header>
+    <!-- <section class="banner"></section> -->
+    <script type="text/javascript">
+    window.addEventListener("scroll",function()
+    {
+        var header=document.querySelector("header");
+        header.classList.toggle("sticky",window.scrollY>0);
+    })
+    </script>
+<div class="space">
+    <div class="contact-us">
+        <h1>Contact Us</h1>
+        <h3>Home / Contact Us</h3>
+    </div>
+    <div class="contact-form">
+        <!-- <h3>GET IN TOUCH WITH US</h3> -->
+        <div class="row  left-info">
+            <!-- <div class="col-md-12">
+            <h3>GET IN TOUCH WITH US</h3>
+            </div> -->
+            <div class="col-md-6 cont-us">
+                <h3 class="title2">GET IN TOUCH WITH US</h3>
+                <form>
+                    <!-- <div class="row">
+                        <div class="col-md-6">
+                            <input class="input" type="text" name="" id="" placeholder="FIRST NAME" required>
+                            <input class="input" type="number" name="" id="" placeholder="PHONE NUMBER" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input class="input" type="text" name="" id="" placeholder="LAST NAME" required>
+                            <input class="input" type="email" name="" id="" placeholder="EMAIL ADDRESS" required>
+                        </div>
+                    </div> -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="input" type="text" name="" id="" placeholder="FIRST NAME" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input class="input last-name" type="text" name="" id="" placeholder="LAST NAME" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="input" type="tel" name="" id="" placeholder="PHONE NUMBER" minlength="10" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input class="input email" type="email" name="" id="" placeholder="EMAIL ADDRESS" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <textarea class="form-control" placeholder="MESSAGE" id="con_message" name="con_message"
+                            required></textarea>
+                    </div>
+                    <div class="row">
+                        <button class="submit" type="submit">SEND MESSAGE &#160;&#160;&#x276F;</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="col-md-6 details">
+                <div class="contact-details">
+                    <div class="row con">
+                        <div class="col-md-6">
+                            <img class="map-img" src="images/map.png" alt="" width="50px">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="address">Marathahalli, Bangalore. <br>pin:-560037, Karnataka</p>
+                        </div>
+                    </div>
+                    <div class="row con">
+                        <div class="col-md-6">
+                            <img class="phone-img" src="images/smartphone.png" alt="" width="50px">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="phone">Phone:-</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="number">8xxxxxxxxx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row con">
+                        <div class="col-md-6">
+                            <img class="mail-img" src="images/gmail.png" alt="" width="50px">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="mail">amitdas1228@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <iframe class="full-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.01816645966383!2d77.70217519707796!3d12.95324336716175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1234f9dd59df%3A0x1609772905ebed62!2s58%2C%205th%20A%20Cross%20Rd%2C%20Ayyappa%20Layout%2C%20Chandra%20Layout%2C%20Marathahalli%2C%20Bengaluru%2C%20Karnataka%20560037!5e0!3m2!1sen!2sin!4v1662444361420!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <footer id="footer">
+            <a class="footer-link" href="https://www.facebook.com/profile.php?id=100009886246542" target="_blank"><i
+                class="fab  fa-facebook-square"></i></a>
+            <a class="footer-link" href="https://www.linkedin.com/in/shyamal-das-534a461ab/" target="_blank"><i
+                class="fab  fa-linkedin"></i></a>
+            <a class="footer-link" href="https://twitter.com/Shyamal64118629?s=08" target="_blank"><i
+                class="fab  fa-twitter-square"></i></a>
+            <a class="footer-link" href="https://www.instagram.com/ig_shyamal_/" target="_blank"><i
+                class="fab  fa-instagram"></i>
+            </a>
+            <a class="footer-link" href="mailto:amitdas1228@gmail.com"><i class="fas fa-envelope"></i></a>
+            <p>© Copyright 2022 Bikewala</p>
+        
+          </footer>
+    <!-- <div class="row">
+        <div class="col-lg-6">
+           
+            <form action="#" method="post" id="contact_form" class="waituk_contact-form">
+                <div class="row">
+                    <div class="col">
+                       
+                            <input type="text" placeholder="FIRST NAME *" id="con_fname" name="con_fname" class="form-control">
+                        
+                    </div>
+                    <div class="col">
+                        
+                            <input type="text" placeholder="LAST NAME *" id="con_lname" name="con_lname" class="form-control">
+                       
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                       
+                            <input type="tel" placeholder="PHONE NUMBER" id="con_phone" name="con_phone" class="form-control">
+                        
+                    </div>
+                    <div class="col">
+                        
+                            <input type="email" placeholder="EMAIL ADDRESS *" id="con_email" name="con_email" class="form-control">
+                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="MESSAGE *" id="con_message" name="con_message"></textarea>
+                </div>
+                <div class="btn-container">
+                    <button id="btn_sent" class="btn btn-primary btn-arrow">SEND MESSAGE</button>
+                    <p id="error_message"> </p>
+                </div>
+            </form>
+        </div> -->
+
+    <!----------Footer---------->
+    <!-- <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download app for android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="image2/play-store.png" alt="">
+                        <img src="image2/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="image2/avon.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure <br> ans
+                        Benefits of Fashion to the many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>JoinAffilate</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Linkdin</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+            <p class="copyright">Copyright 2021 - Shyamal Das</p>
+        </div>
+    </div> -->
+
+    <!----------------ja for toogle menu----------------->
+    <!-- <script>
+        var MenuItems = document.getElementById("menu-items");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script> -->
+</div>
+</body>
+
+</html>

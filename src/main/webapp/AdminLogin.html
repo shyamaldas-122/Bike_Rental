@@ -1,0 +1,90 @@
+
+<!-- <script>alert('Invalid Details');</script> -->
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Bike Rental Portal | Admin Login</title>
+	<link rel="stylesheet" href="css2/font-awesome.min.css">
+	<link rel="stylesheet" href="css2/bootstrap.min.css">
+	<link rel="stylesheet" href="css2/dataTables.bootstrap.min.css">
+	<link rel="stylesheet" href="css2/bootstrap-social.css">
+	<link rel="stylesheet" href="css2/bootstrap-select.css">
+	<link rel="stylesheet" href="css2/fileinput.min.css">
+	<link rel="stylesheet" href="css2/awesome-bootstrap-checkbox.css">
+	<link rel="stylesheet" href="css2/style.css">
+</head>
+
+<body>
+
+		<div class="login-page bk-img" style="background-image: url(images/adminlogin0.jpg);">
+		<div class="form-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<h1 class="text-center text-bold text-light mt-4x">ADMIN LOGIN</h1>
+						<div class="well row pt-2x pb-3x bk-light">
+							<div class="col-md-8 col-md-offset-2">
+							<form id="form" action="" method="GET">
+						        
+						        
+						          <label for="exampleInputEmail1" class="text-uppercase text-sm">Email address</label>
+						          <input type="email" placeholder="Username" id="username" class="form-control mb">
+						       
+						      
+						          <label for="exampleInputPassword1">Password</label>
+						          <input type="password" placeholder="Password" id="password" class="form-control mb" >
+					
+						         <button type="submit" class="btn btn-primary btn-block" onClick="myFunction()">Submit</button>
+     
+							</form>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+						
+					
+<script>
+								
+								function myFunction()
+								{
+									var email = document.getElementById("username").value;
+									var password = document.getElementById("password").value;
+	
+									if(email == "admin" && password == "admin")
+									{
+									    window.location.assign("Dashboard.html");     
+	
+									}
+									else 
+									{
+									   alert("Invalid information");
+									    return ;
+									}
+								}
+								
+								</script>
+	<!-- Loading Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap.min.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<script src="js/fileinput.js"></script>
+	<script src="js/chartData.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
